@@ -1,0 +1,6 @@
+(list 'a 'b)
+;--> (a b)
+(list (list 'george))
+;--> ((george))
+(cdr '((x1 x2) (y1 y2)))
+;--> ((y1 y2))

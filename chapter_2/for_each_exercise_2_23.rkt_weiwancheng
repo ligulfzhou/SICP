@@ -1,0 +1,11 @@
+#lang racket
+(define (for-each proc items)
+  (define (iter items)
+    (cond ((null? items) '())
+          ;;;pair and  atom????
+          (else ((iter (car items))
+                 (iter (cdr items))))))
+  (iter items))
+
+
+        
